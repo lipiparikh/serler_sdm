@@ -1,4 +1,4 @@
-<h1>Log In</h1>
+<h3>Please Log In before Submission</h3>
 <%= form_tag sessions_path do %>
 <div class="field">
 <%= label_tag :email %><br>
@@ -10,5 +10,8 @@
 </div>
   <div class="actions">
     <%= submit_tag "Log In" %>
+    <%= link_to "Register", signup_path%>
+    <%= link_to "Forgotten Password?", "#"%>
 </div>
+
 <% end %>
